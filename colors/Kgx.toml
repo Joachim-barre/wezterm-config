@@ -1,5 +1,4 @@
-# from https://gitlab.gnome.org/GNOME/console/-/blob/main/src/kgx-terminal.c?ref_type=heads
-# palette line 141
+# from https://gitlab.gnome.org/GNOME/console/-/blob/main/src/kgx-terminal.c?ref_type=heads#L141
 
 [colors]
 foreground = "#FFFFFF"
