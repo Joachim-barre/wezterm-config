@@ -3,7 +3,7 @@ local M = {}
 function M.keys()
     local wezterm = require('wezterm')
     act = wezterm.action
-    return {
+    local keys =  {
         {
             key = 'r',
             mods = 'LEADER',
@@ -40,6 +40,16 @@ function M.keys()
             action = act.ActivatePaneDirection 'Down',
         },
     }
+
+    for i = 1, 8 do
+        table.insert(keys, {
+            key = tostring(i),
+            mods = 'LEADER',
+            action = act.ActivateTab(i - 1),
+        })
+    end
+
+    return keys
 end
 
 return M
