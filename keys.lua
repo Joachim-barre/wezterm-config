@@ -41,6 +41,7 @@ function M.keys()
         },
         { key = '(', mods = 'LEADER', action = act.ActivateTabRelative(-1) },
         { key = ')', mods = 'LEADER', action = act.ActivateTabRelative(1) },
+        { key = ':', mods = 'LEADER', action = act.ActivateCommandPalette },
     }
 
     for i = 1, 8 do
