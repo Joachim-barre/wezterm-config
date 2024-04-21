@@ -42,6 +42,7 @@ function M.keys()
         { key = '(', mods = 'LEADER', action = act.ActivateTabRelative(-1) },
         { key = ')', mods = 'LEADER', action = act.ActivateTabRelative(1) },
         { key = ':', mods = 'LEADER', action = act.ActivateCommandPalette },
+        { key = 'c', mods = 'LEADER', action = act.SpawnTab('CurrentPaneDomain') }
     }
 
     for i = 1, 8 do
