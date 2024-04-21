@@ -39,6 +39,8 @@ function M.keys()
             mods = 'LEADER',
             action = act.ActivatePaneDirection 'Down',
         },
+        { key = '(', mods = 'LEADER', action = act.ActivateTabRelative(-1) },
+        { key = ')', mods = 'LEADER', action = act.ActivateTabRelative(1) },
     }
 
     for i = 1, 8 do
