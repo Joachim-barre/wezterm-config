@@ -42,7 +42,11 @@ function M.keys()
         { key = '(', mods = 'LEADER', action = act.ActivateTabRelative(-1) },
         { key = ')', mods = 'LEADER', action = act.ActivateTabRelative(1) },
         { key = ':', mods = 'LEADER', action = act.ActivateCommandPalette },
-        { key = 'c', mods = 'LEADER', action = act.SpawnTab('CurrentPaneDomain') }
+        { key = 'c', mods = 'LEADER', action = act.SpawnTab('CurrentPaneDomain') },
+        { key = '>', mods = 'LEADER|SHIFT', action = act.AdjustPaneSize{ 'Right', 5 } },
+        { key = '<', mods = 'LEADER', action = act.AdjustPaneSize{ 'Left', 5 } },
+        { key = '+', mods = 'LEADER', action = act.AdjustPaneSize{ 'Up', 5 } },
+        { key = '-', mods = 'LEADER', action = act.AdjustPaneSize{ 'Down', 5 } },
     }
 
     for i = 1, 8 do
